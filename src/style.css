@@ -30,6 +30,12 @@
     padding: 0px 0px;
     margin: 35px 0 50px !important;
   }
+  .image-container {
+    background-color: #fff !important;
+  }
+  .image-container img {
+    padding: 10px !important;
+  }
   .image-container p {
     display: none;
   }
