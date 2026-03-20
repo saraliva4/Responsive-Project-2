@@ -63,7 +63,7 @@ p {
   font-size: 23px;
 }
 
-.navigation-links a {
+.body .navigation-links a {
   margin: 20px;
 }
 
@@ -79,8 +79,10 @@ p {
 }
 
 .secondary-link {
+  box-shadow: var(--box-shadow);
   border-radius: 4px;
   padding: 20px 15px;
+  background: #fff;
   text-decoration: none;
   text-transform: capitalize;
   color: var(--primary-color);
@@ -147,6 +149,21 @@ footer {
 
 .project-containers {
   background-color: var(--secondary-color);
+}
+.project-containers img {
+  border: 1px solid grey;
+}
+
+.project-containers .navigation-links {
+  font-size: 14px;
+}
+.project-containers .primary-link {
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.project-containers .secondary-link {
+  margin-left: 10px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
