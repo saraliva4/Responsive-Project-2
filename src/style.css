@@ -28,7 +28,7 @@ a {
   color: var(--tertiary-color);
 }
 
-header {
+.home-header {
   margin: 250px 0;
 }
 .hero-title,
@@ -87,11 +87,11 @@ p {
   border: 1px solid var(--primary-color);
 }
 
-.image-container {
+.image-container,
+.paragraph-container {
   background-color: var(--secondary-color);
   opacity: 0.9;
   padding: 30px 40px;
-  border-radius: 10px;
 }
 .image-container .project-titles {
   font-size: 16px;
@@ -127,12 +127,34 @@ p {
 footer {
   text-align: center;
 }
+.about-header {
+  margin-bottom: 30px;
+}
+.profile-image {
+  max-width: 250px;
+  width: 100%;
+  margin: 0;
+}
+
+.about-hero-title {
+  font-size: 80px;
+  margin: 0;
+  text-align: left;
+}
+.project-hero-title {
+  font-size: 80px;
+}
+
+.project-containers {
+  background-color: var(--secondary-color);
+}
 
 @media (max-width: 768px) {
   body {
     margin: 100px 30px 50px;
+    text-align: center;
   }
-  header {
+  .home-header {
     margin: 0;
   }
   body .hero-title {
@@ -141,9 +163,6 @@ footer {
   }
   body .hero-subtitle {
     font-size: 20px;
-  }
-  body .projects-heading {
-    text-align: center;
   }
   .navigation-links {
     font-size: 16px;
@@ -155,12 +174,15 @@ footer {
   }
   .image-container .project-titles {
     font-size: 20px;
-    text-align: center;
   }
   .image-container img {
     display: none;
   }
-  .image-container p {
+  .about-hero-title {
+    font-size: 60px;
     text-align: center;
+  }
+  .profile-image {
+    max-width: 200px;
   }
 }
