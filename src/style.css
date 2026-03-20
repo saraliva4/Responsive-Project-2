@@ -27,6 +27,10 @@ body {
 a {
   color: var(--tertiary-color);
 }
+
+header {
+  margin: 250px 0;
+}
 .hero-title,
 .hero-subtitle {
   margin: 0;
@@ -127,6 +131,9 @@ footer {
 @media (max-width: 768px) {
   body {
     margin: 100px 30px 50px;
+  }
+  header {
+    margin: 0;
   }
   body .hero-title {
     font-size: 45px;
