@@ -12,8 +12,7 @@
   color: var(--primary-color);
 }
 
-.custom-navbar .nav-item:hover .nav-link,
-.custom-navbar .nav-item.active .nav-link {
+.custom-navbar .nav-item:hover .nav-link {
   color: var(--tertiary-color);
 }
 
@@ -36,17 +35,17 @@ a {
   margin: 0;
 }
 
-body .hero-title {
+.hero-title {
   font-size: 96px;
   text-align: center;
 }
 
-body .hero-subtitle {
+.hero-subtitle {
   font-size: 50px;
   opacity: 0.7;
 }
 
-body .projects-heading {
+.projects-heading {
   margin: 20px;
 }
 
@@ -63,7 +62,7 @@ p {
   font-size: 23px;
 }
 
-.body .navigation-links a {
+.navigation-links a {
   margin: 20px;
 }
 
@@ -73,7 +72,6 @@ p {
   text-decoration: none;
   text-transform: capitalize;
   background: var(--primary-color);
-
   box-shadow: var(--box-shadow);
   color: white;
 }
@@ -92,7 +90,6 @@ p {
 .image-container,
 .paragraph-container {
   background-color: var(--secondary-color);
-  opacity: 0.9;
   padding: 30px 40px;
 }
 .image-container .project-titles {
@@ -129,41 +126,49 @@ p {
 footer {
   text-align: center;
 }
+
 .about-header {
-  margin-bottom: 30px;
+  max-width: 900px;
+  margin: 0 auto 40px;
 }
 .profile-image {
-  max-width: 250px;
-  width: 100%;
+  width: 250px;
+  max-width: 100%;
+  min-width: 200px;
   margin: 0;
 }
-
 .about-hero-title {
   font-size: 80px;
   margin: 0;
   text-align: left;
 }
+.paragraph-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.about-paragraph-titles {
+  font-size: 25px;
+}
+
 .project-hero-title {
   font-size: 80px;
 }
-
 .project-containers {
   background-color: var(--secondary-color);
+  padding: 30px 20px;
 }
 .project-containers img {
-  border: 1px solid grey;
+  border: 5px solid #fff;
+  box-shadow: var(--box-shadow);
 }
-
 .project-containers .navigation-links {
   font-size: 14px;
 }
 .project-containers .primary-link {
   margin-right: 10px;
-  margin-bottom: 20px;
 }
 .project-containers .secondary-link {
   margin-left: 10px;
-  margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
@@ -174,11 +179,11 @@ footer {
   .home-header {
     margin: 0;
   }
-  body .hero-title {
+  .hero-title {
     font-size: 45px;
     margin-bottom: 8px;
   }
-  body .hero-subtitle {
+  .hero-subtitle {
     font-size: 20px;
   }
   .navigation-links {
